@@ -125,9 +125,9 @@ ggplot(percentage_data, aes(x = factor(stars.x), y = percentage)) +
        caption = "Data Source: Your Source") +
   scale_y_continuous(labels = scales::percent, limits = c(0, 0.5), expand = c(0, 0)) +
   theme_minimal() +
-  theme(legend.position = "none",       # Remove legend
-        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Rotate x-axis labels
-        plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),  # Center title
+  theme(legend.position = "none",      
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  
+        plot.title = element_text(hjust = 0.5, size = 14, face = "bold"), 
         axis.title = element_text(size = 12, face = "bold"),
         axis.text = element_text(size = 10),
         plot.caption = element_text(size = 10, color = "gray"))
